@@ -1,0 +1,106 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: white;
+  text-align: center;
+}
+
+/* Header */
+header {
+  padding: 2rem;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  animation: glow 2s infinite alternate;
+}
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+@keyframes glow {
+  from { text-shadow: 0 0 10px #fff; }
+  to { text-shadow: 0 0 20px #ff0, 0 0 30px #f0f; }
+}
+
+/* Input Card */
+.input-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  margin: 2rem auto;
+  padding: 2rem;
+  border-radius: 15px;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.input-card h2 {
+  margin-bottom: 1rem;
+}
+.input-card input {
+  padding: 0.8rem;
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+.input-card button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+.input-card button:hover {
+  transform: scale(1.1);
+  background: linear-gradient(90deg, #f7971e, #ffd200);
+}
+
+/* Results Section */
+#result {
+  padding: 2rem;
+}
+.hidden {
+  display: none;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+.card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  padding: 1.2rem;
+  font-size: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+  animation: fadeIn 1s ease-in-out;
+}
+.chart-card {
+  margin-top: 2rem;
+  background: rgba(0,0,0,0.3);
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 25px rgba(0,0,0,0.4);
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Footer */
+footer {
+  margin-top: 3rem;
+  padding: 1rem;
+  background: rgba(0,0,0,0.2);
+  font-size: 0.9rem;
+}
